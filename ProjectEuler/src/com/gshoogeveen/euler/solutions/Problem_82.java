@@ -8,6 +8,7 @@ import com.gshoogeveen.euler.input.ReadGrid;
 
 public class Problem_82
 {
+	//SOLVED//
 	public static void main(String[] args)
 	{
 		Grid pathCost = ReadGrid.readGridFromFile("p082_matrix.txt");
