@@ -2,35 +2,47 @@ package com.gshoogeveen.euler.grid;
 
 public class Grid
 {
-	private final int W, H;
+	private final int M, N;
 	private final int [][] grid;
 	
-	public Grid(int W, int H)
+	public Grid(int M, int N)
 	{
-		this.W = W;
-		this.H = H;
-		grid = new int[W][H];
+		this.M = M;
+		this.N = N;
+		grid = new int[M][N];
 	}
 	
 	public Grid(int data[][])
 	{
-		this.W = data.length;
-		this.H = data[0].length;
-		grid = new int[W][H];
+		this.M = data.length;
+		this.N = data[0].length;
+		grid = new int[M][N];
 		
-		for (int i = 0; i < W; i++)
-			for (int j = 0; j < H; j++)
+		for (int i = 0; i < M; i++)
+			for (int j = 0; j < N; j++)
 				grid[i][j] = data[i][j];
 	}
 	
-	public int getWidth()
+	public void clear()
 	{
-		return W;
+		clear(0);
 	}
 	
-	public int getHeight()
+	public void clear(int x)
 	{
-		return H;
+		for (int i = 0; i < M; i++)
+			for (int j = 0; j < N; j++)
+				grid[i][j] = x;
+	}
+	
+	public int getRows()
+	{
+		return M;
+	}
+	
+	public int getColumns()
+	{
+		return N;
 	}
 	
 	public int get(int x,int y)
@@ -41,5 +53,16 @@ public class Grid
 	public void set(int x, int y, int value)
 	{
 		grid[x][y] = value;
+	}
+	
+	public void show()
+	{
+		for(int i =0; i< M; i ++)
+		{
+			for(int j =0; j< N; j ++)
+				System.out.print(grid[i][j]+",");
+			System.out.println();
+		}
+			
 	}
 }
