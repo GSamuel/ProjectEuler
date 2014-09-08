@@ -6,6 +6,7 @@ import com.gshoogeveen.euler.date.Month;
 
 public class Problem_19
 {
+	//SOLVED//
 	public static void main(String[] args)
 	{
 		Date date = new Date(1900, Month.JANUARY, 1, Day.MONDAY);
