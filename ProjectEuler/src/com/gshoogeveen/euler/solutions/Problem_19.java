@@ -22,5 +22,10 @@ public class Problem_19
 		}
 		System.out.println("amount of sundays that have past: "+sundays);
 		
+		date = new Date(1900, Month.JANUARY, 1, Day.MONDAY);
+		while(!(date.getYear()==1992 && date.getMonth() == Month.DECEMBER && date.getDayNumber() == 17))
+			date.nextDay();
+		date.show();
+		
 	}
 }
