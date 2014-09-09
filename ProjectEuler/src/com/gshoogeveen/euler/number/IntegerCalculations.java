@@ -4,6 +4,29 @@ import java.util.ArrayList;
 
 public class IntegerCalculations
 {
+	public static int[] getDigits(int num)
+	{
+		ArrayList<Integer> list = new ArrayList<Integer>();
+
+		while (num > 0)
+		{
+			list.add(0, num % 10); // place low order digit in array
+			num = num / 10; // remove low order digit from temp;
+		}
+
+		return arrayListToArray(list);
+
+	}
+	
+	private static int[] arrayListToArray(ArrayList<Integer> list)
+	{
+		int[] array = new int[list.size()];
+		for (int i = 0; i < list.size(); i++)
+			array[i] = list.get(i);
+		
+		return array;
+	}
+
 	public static int[] getProperDivisors(int num)
 	{
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -12,11 +35,7 @@ public class IntegerCalculations
 			if (num % i == 0)
 				list.add(i);
 
-		int[] array = new int[list.size()];
-		for (int i = 0; i < list.size(); i++)
-			array[i] = list.get(i);
-
-		return array;
+		return arrayListToArray(list);
 	}
 
 	public static int sum(int[] list)
@@ -32,12 +51,12 @@ public class IntegerCalculations
 		int length = (int) (Math.log10(num) + 1);
 		int results[] = new int[length];
 		results[0] = num;
-		
-		for(int i =1; i < length; i++)
+
+		for (int i = 1; i < length; i++)
 		{
-			int rest = num%10;
-			num /=10;
-			num+= rest * Math.pow(10,length-1);
+			int rest = num % 10;
+			num /= 10;
+			num += rest * Math.pow(10, length - 1);
 			results[i] = num;
 		}
 
