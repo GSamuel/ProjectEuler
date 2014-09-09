@@ -34,6 +34,20 @@ public class Fraction implements Comparable<Fraction>
 	{
 		return 1.0 * num / det;
 	}
+	
+	public void reduce()
+	{
+		int[] numList = IntegerCalculations.getProperDivisors(num);
+		int[] detList = IntegerCalculations.getProperDivisors(det);
+		int biggest = 1;
+		for(int n:numList)
+			for(int d: detList)
+				if(d==n && d>biggest)
+					biggest = d;
+		
+		num /= biggest;
+		det /= biggest;
+	}
 
 	@Override
 	public int compareTo(Fraction frac)
