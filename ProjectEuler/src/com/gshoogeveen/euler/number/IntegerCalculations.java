@@ -17,13 +17,25 @@ public class IntegerCalculations
 		return arrayListToArray(list);
 
 	}
-	
+
+	public static int digitsToInteger(int[] list)
+	{
+		int num = 0;
+		for (int n : list)
+		{
+			num *= 10;
+			num += n;
+		}
+
+		return num;
+	}
+
 	private static int[] arrayListToArray(ArrayList<Integer> list)
 	{
 		int[] array = new int[list.size()];
 		for (int i = 0; i < list.size(); i++)
 			array[i] = list.get(i);
-		
+
 		return array;
 	}
 
