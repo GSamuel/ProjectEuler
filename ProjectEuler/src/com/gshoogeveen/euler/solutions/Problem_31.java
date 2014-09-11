@@ -4,7 +4,6 @@ public class Problem_31
 {
 	//SOLVED//
 	private static int[] diffCoins = { 1, 2, 5, 10, 20, 50, 100, 200 };
-	private static int totalAmount = 0;
 	private static int max = 200;
 
 	public static void main(String[] args)

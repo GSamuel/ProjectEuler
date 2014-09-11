@@ -1,7 +1,5 @@
 package com.gshoogeveen.euler.solutions;
 
-import java.util.HashMap;
-
 import com.gshoogeveen.euler.number.IntegerCalculations;
 
 public class Problem_92

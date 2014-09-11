@@ -12,7 +12,6 @@ public class Problem_23
 		final int max = 28124;
 		
 		ArrayList<Integer> abundants = new ArrayList<Integer>();
-		ArrayList<Integer> sums = new ArrayList<Integer>();
 		boolean results[] = new boolean [max];
 
 		for (int i = 0; i < max; i++)
