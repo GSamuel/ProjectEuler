@@ -7,17 +7,19 @@ import java.util.Scanner;
 public class ReadSudoku
 {
 
-	public static int[] readSudokuFromFile(String file)
+	public static int[][] readSudokuFromFile(String file)
 	{
-		int[] list = null;
-		String[] line;
+		int[][] matrix = new int[9][9];
+		char[][] line = new char[9][9];
 		Scanner input = null;
-		
+
 		try
 		{
 			input = new Scanner(new File(file));
-			line = input.nextLine().split(",");
-			
+			input.nextLine();
+			for (int i = 0; i < 9; i++)
+				line[i] = input.nextLine().toCharArray();
+
 		} catch (FileNotFoundException e)
 		{
 			System.out.println("file not found");
@@ -26,14 +28,19 @@ public class ReadSudoku
 		{
 			input.close();
 		}
-		if(line != null)
+
+		if (line != null)
 		{
-			list = new int[line.length];
-			for(int i =0; i < line.length; i++)
-				list[i] = Integer.parseInt(line[i]);
+			for (int i = 0; i < line.length; i++)
+			{
+				for (int j = 0; j < line[i].length; j++)
+				{
+					matrix[i][j] = Integer.parseInt("" + line[i][j]);
+				}
+			}
 		}
-		
-		return list;
-		
+
+		return matrix;
+
 	}
 }
