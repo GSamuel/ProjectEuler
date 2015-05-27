@@ -22,7 +22,7 @@ public class Problem_52
 						if(IntegerCalculations.isSameList(dig4, dig5))
 							if(IntegerCalculations.isSameList(dig5, dig6))
 							{
-								System.out.println(i);
+								System.out.println("solution:"+i);
 								return;
 							}
 		}
