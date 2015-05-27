@@ -5,7 +5,7 @@ public class Problem_45
 
 	public static void main(String[] args)
 	{
-		int answerAmount = 2;
+		int answerAmount = 3;
 		int penN = 1, triN = 1, hexN = 1;
 		long penVal = pentagonalFunction(penN);
 		long triVal = triangleFunction(triN);

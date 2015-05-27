@@ -74,4 +74,24 @@ public class IntegerCalculations
 
 		return results;
 	}
+	
+	public static int[] countDigits(int num)
+	{
+		int[] digits = new int[10];
+		int[] dig = IntegerCalculations.getDigits(num);
+		for(int d: dig)
+			digits[d]++;
+		return digits;
+	}
+	
+	public static boolean isSameList(int[] a, int[] b)
+	{
+		if(a.length != b.length)
+			return false;
+		
+		for(int i = 0; i < a.length; i++)
+			if(a[i] != b[i])
+				return false;
+		return true;
+	}
 }
