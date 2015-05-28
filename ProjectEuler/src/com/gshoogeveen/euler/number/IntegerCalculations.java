@@ -104,6 +104,18 @@ public class IntegerCalculations
 			return num.multiply(faculty(num.subtract(BigInteger.ONE)));
 	}
 	
+	
+	
+	public static BigInteger power(int a, int b)
+	{
+		BigInteger base = new BigInteger(""+a);
+		BigInteger value = BigInteger.ONE;
+		while(b-->0)
+			value = value.multiply(base);
+				
+		return value;
+	}
+	
 	public static long faculty(long num)
 	{
 		if(num == 1 || num == 0)
