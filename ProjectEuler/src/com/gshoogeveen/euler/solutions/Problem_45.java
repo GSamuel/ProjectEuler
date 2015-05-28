@@ -10,7 +10,6 @@ public class Problem_45
 		long penVal = pentagonalFunction(penN);
 		long triVal = triangleFunction(triN);
 		long hexVal = hexagonalFunction(hexN);
-		int lastIndexTimer=0;
 
 		for (int i = 0; i < answerAmount; i++)
 		{

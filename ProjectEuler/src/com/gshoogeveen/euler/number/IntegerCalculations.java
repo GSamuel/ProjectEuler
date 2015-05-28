@@ -1,5 +1,6 @@
 package com.gshoogeveen.euler.number;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 
 public class IntegerCalculations
@@ -93,5 +94,21 @@ public class IntegerCalculations
 			if(a[i] != b[i])
 				return false;
 		return true;
+	}
+	
+	public static BigInteger faculty(BigInteger num)
+	{
+		if(num.compareTo(BigInteger.ONE) == 0 || num.compareTo(BigInteger.ZERO) == 0)
+			return BigInteger.ONE;
+		else
+			return num.multiply(faculty(num.subtract(BigInteger.ONE)));
+	}
+	
+	public static long faculty(long num)
+	{
+		if(num == 1 || num == 0)
+			return 1;
+		else
+			return num * faculty(num-1);
 	}
 }
