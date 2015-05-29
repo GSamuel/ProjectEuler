@@ -1,8 +1,5 @@
 package com.gshoogeveen.euler.solutions;
 
-import java.math.BigInteger;
-
-import com.gshoogeveen.euler.number.IntegerCalculations;
 
 public class Problem_85 {
 
@@ -14,7 +11,8 @@ public class Problem_85 {
 	public static void main(String[] args) {
 		
 		long minDiff = twoMil; //Area that is closest 2mil 
-		for(int sumSides = 2; sumSides<1000; sumSides++)
+		long bestArea = 0;
+		for(int sumSides = 2; sumSides<200; sumSides++)
 			for(int i = 1; i < sumSides; i++)
 			{
 				int j = sumSides - i;
@@ -23,16 +21,21 @@ public class Problem_85 {
 				if ( diff < minDiff)
 				{
 					minDiff = diff;
+					bestArea = i*j;
 					System.out.println(i+","+j+" area:"+area);
 				}
 			}
-
-		System.out.println(countRectangle(1, 3));
+		
+		System.out.println("answer:"+bestArea);
 	}
 	
 	public static int countRectangle(int w, int h)
 	{
-		return addOneToN(w)*h;
+		int value = 0;
+		for(int i =1; i <= w; i++)
+			for(int j = 1; j <= h; j++)
+				value += i*j;
+		return value;
 	}
 	
 	public static int countLine(int a)
