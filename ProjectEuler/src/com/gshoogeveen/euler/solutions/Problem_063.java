@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import com.gshoogeveen.euler.number.IntegerCalculations;
 
-public class Problem_63 {
+public class Problem_063 {
 
 	/**
 	 * @param args

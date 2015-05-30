@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.gshoogeveen.euler.number.IntegerCalculations;
 import com.gshoogeveen.euler.primes.PrimeBuilder;
 
-public class Problem_35
+public class Problem_035
 {
 	//SOLVED// answer: 55         (takes around 6 min before the code is finished running)
 	public static void main(String[] args)

@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import java.util.HashMap;
 
-public class Problem_44
+public class Problem_044
 {
 	private static HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
 	private static int highest = 0;

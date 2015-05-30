@@ -4,7 +4,7 @@ import com.gshoogeveen.euler.date.Date;
 import com.gshoogeveen.euler.date.Day;
 import com.gshoogeveen.euler.date.Month;
 
-public class Problem_19
+public class Problem_019
 {
 	//SOLVED//
 	public static void main(String[] args)

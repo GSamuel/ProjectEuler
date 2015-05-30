@@ -3,7 +3,7 @@ package com.gshoogeveen.euler.solutions;
 import java.math.BigInteger;
 
 
-public class Problem_97
+public class Problem_097
 {
 
 	public static void main(String[] args)

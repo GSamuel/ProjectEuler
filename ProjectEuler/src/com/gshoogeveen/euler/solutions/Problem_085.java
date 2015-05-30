@@ -1,7 +1,7 @@
 package com.gshoogeveen.euler.solutions;
 
 
-public class Problem_85 {
+public class Problem_085 {
 
 	/**
 	 * @param args

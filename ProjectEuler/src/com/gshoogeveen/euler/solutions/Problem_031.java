@@ -1,6 +1,6 @@
 package com.gshoogeveen.euler.solutions;
 
-public class Problem_31
+public class Problem_031
 {
 	//SOLVED//
 	private static int[] diffCoins = { 1, 2, 5, 10, 20, 50, 100, 200 };

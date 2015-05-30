@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 import com.gshoogeveen.euler.number.IntegerCalculations;
 
-public class Problem_53 {
+public class Problem_053 {
 
 	/**
 	 * @param args

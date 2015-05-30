@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import com.gshoogeveen.euler.number.IntegerCalculations;
 
-public class Problem_52
+public class Problem_052
 {
 
 	public static void main(String[] args)

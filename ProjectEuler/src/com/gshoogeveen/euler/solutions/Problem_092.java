@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import com.gshoogeveen.euler.number.IntegerCalculations;
 
-public class Problem_92
+public class Problem_092
 {
 	// SOLVED//
 	private static int[] squares = { 0, 1, 4, 9, 16, 25, 36, 49, 64, 81 };

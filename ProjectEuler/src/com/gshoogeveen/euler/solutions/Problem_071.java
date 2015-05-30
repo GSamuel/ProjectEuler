@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import com.gshoogeveen.euler.number.Fraction;
 
-public class Problem_71
+public class Problem_071
 {
 	//SOLVED//
 	public static void main(String[] args)

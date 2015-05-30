@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.gshoogeveen.euler.input.ReadPoint;
 
-public class Problem_99
+public class Problem_099
 {
 
 	public static void main(String[] args)

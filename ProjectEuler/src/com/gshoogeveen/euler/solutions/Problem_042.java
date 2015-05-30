@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import com.gshoogeveen.euler.input.ReadWords;
 
-public class Problem_42
+public class Problem_042
 {
 	private static String letters= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	public static void main(String[] args)

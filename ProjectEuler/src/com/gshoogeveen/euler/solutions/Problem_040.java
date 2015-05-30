@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import java.util.ArrayList;
 
-public class Problem_40
+public class Problem_040
 {
 	public static void main(String args[])
 	{

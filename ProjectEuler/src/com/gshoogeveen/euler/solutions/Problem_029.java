@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import java.util.HashMap;
 
-public class Problem_29
+public class Problem_029
 {
 
 	public static void main(String[] args)

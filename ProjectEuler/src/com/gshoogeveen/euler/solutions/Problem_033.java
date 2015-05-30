@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.gshoogeveen.euler.number.Fraction;
 
-public class Problem_33
+public class Problem_033
 {
 
 	public static void main(String[] args)

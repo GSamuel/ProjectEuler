@@ -3,7 +3,7 @@ package com.gshoogeveen.euler.solutions;
 import com.gshoogeveen.euler.input.ReadList;
 import com.gshoogeveen.euler.list.CycleArray;
 
-public class Problem_59
+public class Problem_059
 {
 	//SOLVED//
 	public static void main(String[] args)

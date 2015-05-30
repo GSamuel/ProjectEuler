@@ -1,6 +1,6 @@
 package com.gshoogeveen.euler.solutions;
 
-public class Problem_45
+public class Problem_045
 {
 
 	public static void main(String[] args)

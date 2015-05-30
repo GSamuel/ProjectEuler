@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import com.gshoogeveen.euler.shape.TriangleSides;
 
-public class Problem_39
+public class Problem_039
 {
 	public static void main(String args[])
 	{

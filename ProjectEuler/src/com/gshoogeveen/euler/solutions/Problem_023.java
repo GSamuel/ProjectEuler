@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.gshoogeveen.euler.number.IntegerCalculations;
 
-public class Problem_23
+public class Problem_023
 {
 	//SOLVED//
 	public static void main(String[] args)

@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import com.gshoogeveen.euler.grid.Grid;
 import com.gshoogeveen.euler.input.ReadGrid;
 
-public class Problem_82
+public class Problem_082
 {
 	//SOLVED//
 	public static void main(String[] args)

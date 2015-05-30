@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 import com.gshoogeveen.euler.number.IntegerCalculations;
 
-public class Problem_32
+public class Problem_032
 {
 	//SOLVED//
 	private static LinkedList<Integer[]> finalList = new LinkedList<Integer[]>();

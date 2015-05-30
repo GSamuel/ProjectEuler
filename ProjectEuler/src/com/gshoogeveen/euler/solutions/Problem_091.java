@@ -2,7 +2,7 @@ package com.gshoogeveen.euler.solutions;
 
 import com.gshoogeveen.euler.shape.Triangle;
 
-public class Problem_91
+public class Problem_091
 {
 	//SOLVED//
 	public static void main(String[] args)
