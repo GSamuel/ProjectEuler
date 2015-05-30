@@ -18,6 +18,19 @@ public class IntegerCalculations
 		return arrayListToArray(list);
 
 	}
+	
+	public static int[] getDigits(long num)
+	{
+		ArrayList<Integer> list = new ArrayList<Integer>();
+
+		while (num > 0)
+		{
+			list.add(0, (int)(num % 10)); // place low order digit in array
+			num = num / 10; // remove low order digit from temp;
+		}
+
+		return arrayListToArray(list);
+	}
 
 	public static int digitsToInteger(int[] list)
 	{
